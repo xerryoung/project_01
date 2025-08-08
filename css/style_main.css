@@ -1,0 +1,175 @@
+/* section 메인 배너 스타일 */
+section{
+    clear: both; padding-top: 100px;
+}
+section article img{
+    vertical-align: middle;
+    width: 100%; margin: 0; padding: 0;
+}
+
+
+/* main 중간 배너 스타일 */
+main img{
+    vertical-align: middle;
+}
+.imgbox1{
+    position: absolute; left: 0; top: 0; 
+    background-color: white; width: 39px; height: 39px; border-radius: 39px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.imgbox2{
+    position: absolute; left: 0; top: 0;
+    img{width: 39px; height: 39px; opacity: 0; scale: 50%;}
+}
+.btn_box:hover .imgbox1 img{
+    transform: rotate(360deg);
+    transition: all 0.5s ease;
+}
+.btn_box:hover .imgbox2 img{
+    transform: rotate(360deg);
+    opacity: 1; scale: 100%;
+    transition: all 0.5s ease;
+}
+
+#main_a1{
+    clear: both; position: relative;
+    h4{margin-top: 14px;}
+    img{transition: all 0.8s ease;}
+    > img{float: left; width: 50%; height: 300px;}
+}
+#main_a1_t1{
+    position: absolute; top: 50px; left: 350px;
+}
+#main_a1_t2{
+    position: absolute; top: 50px; left: 1020px;
+    color: rgba(255, 255, 255, 0.7);
+    h1{color: white;}
+}
+#btn_box1{
+    position: absolute; top: 220px; left: 350px;
+}
+#btn_box2{
+    position: absolute; top: 220px; left: 1020px;
+}
+
+#main_a2{
+    clear: both; position: relative; overflow: hidden;
+    display: flex;
+    img{transition: all 0.8s ease;}
+    > img{width: 100%;}
+}
+#main_a2_img:hover > img{
+    transform: scale(1.05);
+}
+#main_a2_t{
+    position: absolute; top: 70px; left: 350px;
+    h1{color: rgb(88, 55, 22);}
+    hr{border: 1px solid rgb(88, 55, 22); width: 40px; margin: 20px 0;}
+}
+#btn_box3{
+    position: absolute; bottom: 80px; left: 350px;
+}
+
+#main_a3{
+    clear: both; position: relative; overflow: hidden;
+    display: flex;
+    img{transition: all 0.8s ease;}
+}
+#main_a3_img1:hover > img{
+    transform: scale(1.05);
+}
+#main_a3_img2:hover > img{
+    transform: scale(1.05);
+}
+#main_a3_t1{
+    position: absolute; top: 50px; left: 350px;
+    hr{border: 1px solid darkblue; width: 40px; margin: 20px 0;}
+}
+#main_a3_t2{
+    position: absolute; top: 50px; left: 1200px;
+    hr{border: 1px solid orange; width: 40px; margin: 20px 0;}
+    h1{color: orange;}
+}
+#btn_box4{
+    position: absolute; bottom: 80px; left: 350px;
+}
+#btn_box5{
+    position: absolute; bottom: 80px; left: 1200px;
+}
+
+
+/* main 메인 하단부 스타일 */
+.main_b{
+    clear: both;
+    margin-left: 350px;
+    h1{display: inline-block; margin: 0;}
+}
+.main_b1{
+    position: relative; float: left;
+    border: 2px solid darkblue;
+    box-sizing: border-box;
+    margin-right: 20px; margin-bottom: 20px; padding: 50px 0px 0px 50px; 
+    width: 530px; height: 290px;
+    input::placeholder{color: rgba(0, 0, 139, 0.3);}
+}
+#strsearch{
+    position: absolute; bottom: 50px;
+    border: 2px solid darkblue;
+    width: 250px; height: 30px;
+    padding-left: 15px;
+}
+#mgnicon{
+    position: absolute; bottom: 58px; left: 285px;
+    width: 20px;
+}
+.main_b2{
+    border: 2px solid darkblue;
+    box-sizing: border-box;
+    margin-right: 20px; margin-bottom: 100px;
+    padding: 50px 0px 0px 50px; 
+    width: 530px;
+    height: 290px;
+    float: left;
+    position: relative;
+    img{transition: all 0.8s ease;}
+}
+#btn_box7{
+    position: absolute; bottom: 80px; left: 50px;
+}
+#stricon{
+    position: absolute; left: 0; top: 0; text-align: center; line-height: 39px;
+    background-color: white; width: 39px; height: 39px; border-radius: 39px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    img{width: 50%; padding-left: 2px;}
+}
+#cirlogo{
+    position: absolute; left: 0; top: 0;
+    img{width: 39px; height: 39px; opacity: 0; scale: 50%;}
+}
+#str_box:hover #cirlogo img{
+    opacity: 1; scale: 100%;
+    transition: all 0.5s ease;
+}
+#faceimg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 220px;
+}
+.main_b3{
+    position: relative; float: right;
+    width: 1020px; height: 600px; overflow: hidden;
+    img{transition: all 0.8s ease;}
+}
+.main_b3:hover > img{
+    transform: scale(1.05);
+}
+#main_b3_text{
+    position: absolute;
+    top: 50px; left: 50px;
+    color: white; h1{color: white;}
+    hr{border: 1px solid white; width: 40px; margin: 20px 0;}
+}
+#btn_box6{
+    position: absolute; bottom: 80px; left: 50px;
+}

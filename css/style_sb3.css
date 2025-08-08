@@ -1,0 +1,55 @@
+/* section 메뉴 in 배너 */
+section{
+    position: relative;
+    display: flex; justify-content: center;
+}
+.sb_st_2{
+    position: absolute; top: 250px;
+    text-align: center;
+    hr{border: 1px solid black; width: 50px; margin: 25px auto;}
+}
+.sb_st_3{
+    position: absolute; top: 520px;
+    margin: 0; padding: 0;
+}
+.sb_st_3{
+    box-sizing: border-box;
+    ul li{border: 1px solid lightgray; background-color: white;};
+    ul li:nth-child(3){background-color: rgb(255, 230, 0);}
+    table tr{border: 1px solid lightgray; background-color: white;};
+    table td{border-right: 1px solid lightgray;};
+    table td:nth-child(3){border-right: none;};
+    table td:nth-child(1){background-color: rgb(255, 230, 0);}
+}
+.drink_menu1{
+    list-style: none; display: flex;
+    li{padding: 5px 0; width: 150px; text-align: center; font-size: 18px;}
+    li:hover{
+        display: inline-block;
+        width: 150px; background-color: rgb(255, 230, 0);
+    }
+}
+.drink_menu2{
+    border-collapse: collapse;
+    td{padding: 5px 0; width: 150px; text-align: center; font-size: 18px;}
+    td:hover{
+        display: inline-block;
+        width: 150px; background-color: rgb(255, 230, 0);
+    }
+}
+
+
+/* main 메인 목록 */
+.main_a{margin: 70px auto;}
+
+#notice {border-collapse: collapse; margin: 0 auto; width: 1200px;  text-align: center; border-top: 3px solid darkblue;}
+#notice tr {border: 1px solid lightgray; border-left: none; border-right: none;}
+#notice thead th {height: 60px; color: darkblue}
+#notice tbody tr {height: 80px;}
+#notice tbody tr:hover{color: white; background-color: rgb(20, 30, 110);}
+#notice tbody tr:hover a{color: white;}
+#notice tbody td:nth-child(1) {width: 60px;}
+#notice tbody td:nth-child(2) {width: 60px;}
+#notice tbody td:nth-child(3) {width: 500px; text-align: left; padding: 0px 50px;}
+#notice tbody td:nth-child(4) {width: 80px;}
+#notice tbody td:nth-child(5) {width: 60px;}

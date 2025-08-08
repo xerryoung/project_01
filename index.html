@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/sytle.css">
+    <link rel="stylesheet" href="./css/style_main.css">
+    <title>빽다방 클론</title>
+</head>
+<body>
+    <!-- 상단 -->
+    <header>
+        <div class="header1">
+            <a href="#"><img src="./img/back_main_logo.png" alt="main_logo"></a>
+        </div>
+        <div class="header2">
+            <div class="header2_1">
+                <span><a href="https://www.theborn.co.kr/" target="_blank">더본코리아</a> ｜ </span>
+                <a href="https://ko-kr.facebook.com/ipaikscoffee/" target="_blank"><img src="./img/icon_fb.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/paikscoffee_official/" target="_blank"><img src="../img/icon_ig.png" alt="instagram"></a>
+            </div>
+            <div class="header2_2">
+                <ul class="header_menu">
+                    <li><a href="#">빽다방</a>
+                        <ul class="header_submenu">
+                            <li><a href="#">CEO 인사말</a></li>
+                            <li><a href="#">빽다방 소개</a></li>
+                            <li><a href="#">멤버십 / 앱 소개</a></li>
+                            <li><a href="#">커피 이야기</a></li>
+                            <li><a href="#">교육 이야기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sb2_menu.html">메뉴</a>
+                        <ul class="header_submenu">
+                            <li><a href="#">신메뉴</a></li>
+                            <li><a href="#">커피</a></li>
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">아이스크림/디저트</a></li>
+                            <li><a href="#">빽스치노</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sb3_notice.html">소식</a>
+                        <ul class="header_submenu">
+                            <li><a href="#">소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#매장안내">매장안내</a>
+                        <ul class="header_submenu">
+                            <li><a href="#">매장 찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#창업안내">창업안내</a>
+                        <ul class="header_submenu">
+                            <li><a href="#">왜 뻭다방인가요?</a></li>
+                            <li><a href="#">창업상담 신청</a></li>
+                            <li><a href="#">창업절차 및 조건</a></li>
+                            <li><a href="#">인테리어</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./sb6_cs.html" target="_blank">고객의 소리</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 슬라이딩 배너 -->
+    <section>
+        <article class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="./img/main_slide-01.jpg" alt="main_bn1">
+                <img class="swiper-slide" src="./img/main_slide-02.jpg" alt="main_bn2">
+                <img class="swiper-slide" src="./img/main_slide-03.jpg" alt="main_bn3">
+                <img class="swiper-slide" src="./img/main_slide-04.jpg" alt="main_bn4">
+                <img class="swiper-slide" src="./img/main_slide-05.jpg" alt="main_bn5">
+                <!-- <div class="swiper-button-next"></div> -->
+                <!-- <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+    </section>
+
+    <!-- 메인 중간 배너 -->
+    <main>
+        <!-- 메인 배너 3줄 -->
+        <div id="main_a1">
+            <img src="./img/main_sec1.png" alt="">
+            <img src="./img/main_sec1-2.png" alt="">
+            <div id="main_a1_t1">
+                <h1>PAIK'S COFFEE<br>STORY</h1>
+                <h4>균형잡힌 바디감으로 긴 여운을 남기는 빽다방 커피를 만나보세요.</h4>
+            </div>
+            <div id="main_a1_t2">
+                <h1>PAIK'S BRAND<br>STORY</h1>
+                <h4>합리적인 가격으로 만나는 맛있고 든든한 빽다방</h4>
+            </div>
+            <div id="btn_box1">
+                <div class="btn_box">
+                    <div class="imgbox1"><img src="./img/view_icon4.png" alt="view_icon"></div>
+                    <div class="imgbox2"><img src="./img/logo_circle.png" alt="logo_circle"></div>
+                </div>
+            </div>
+            <div id="btn_box2">
+                <div class="btn_box">
+                    <div class="imgbox1"><img src="./img/view_icon4.png" alt="view_icon"></div>
+                    <div class="imgbox2"><img src="./img/logo_circle.png" alt="logo_circle"></div>
+                </div>
+            </div>
+        </div>
+        <div id="main_a2">
+            <div id="main_a2_img">
+                <img src="./img/main_sec2.jpg" alt="">
+                <div id="btn_box3">
+                <div class="btn_box">
+                    <div class="imgbox1"><img src="./img/view_icon4.png" alt="view_icon"></div>
+                    <div class="imgbox2"><img src="./img/logo_circle.png" alt="logo_circle"></div>
+                </div>
+            </div>
+            </div>
+            <div id="main_a2_t">
+                <h1>FRESH<br>COFFEE</h1><hr>
+                <h4>신선한 뉴크롭 원두를 사용하여<br>추출한 커피 메뉴!</h4>
+            </div>
+        </div>
+        <div id="main_a3">
+            <div id="main_a3_img1">
+                <img id="main_a3_i1" src="./img/main_sec3.jpg" alt="">
+                <div id="btn_box4">
+                <div class="btn_box">
+                    <div class="imgbox1"><img src="./img/view_icon4.png" alt="view_icon"></div>
+                    <div class="imgbox2"><img src="./img/logo_circle.png" alt="logo_circle"></div>
+                </div>
+            </div>
+            </div>
+            <div id="main_a3_img2">
+                <img src="./img/main_sec4.jpg" alt="">
+                <div id="btn_box5">
+                <div class="btn_box">
+                    <div class="imgbox1"><img src="./img/view_icon4.png" alt="view_icon"></div>
+                    <div class="imgbox2"><img src="./img/logo_circle.png" alt="logo_circle"></div>
+                </div>
+            </div>
+            </div>
+            <div id="main_a3_t1">
+                <h1>VARIOUS<br>BEVERAGE</h1><hr>
+                <h4>에이드, 티, 주스 등 취향대로<br>골라먹는 즐거움!</h4>
+            </div>
+            <div id="main_a3_t2">
+                <h1>SWEET<br>PPIK'S CCINO</h1><hr>
+                <h4>달콤 시원한 빽다방<br>시그니처 메뉴!</h4>
+            </div>
+        </div>
+
+        <!-- 스토어/창업안내 -->
+        <div class="main_b">
+            <div class="main_b1">
+                <h1>STORE</h1>
+                <p>원하시는 지역의 매장을 검색해보세요!</p>
+                <input id="strsearch" placeholder="Find a store in your area!">
+                <a href="#"><img id="mgnicon" src="./img/icon_magnifier.png"></a>
+            </div>
+            <div class="main_b3">
+                <img src="./img/main_sec5.jpg">
+                <div id="main_b3_text">
+                    <h1>TASTY<br>ICE CREAM /<br>DESSERT</h1><hr>
+                    <h4>달콤한 아이스크림부터<br>든든한 브레드까지!</h4>
+                </div>
+                <div id="btn_box6">
+                    <div class="btn_box">
+                        <div class="imgbox1"><img src="./img/view_icon4.png" alt="view_icon"></div>
+                        <div class="imgbox2"><img src="./img/logo_circle.png" alt="logo_circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_b2">
+                <h1>FRANCHISE</h1>
+                <p>빽다방 창업안내를 도와드리겠습니다.</p>
+                <div id="btn_box7">
+                    <div id="str_box">
+                        <div id="stricon"><img src="./img/store-ico.png" alt="stricon"></div>
+                        <div id="cirlogo"><img src="./img/logo_circle.png" alt="logo_circle"></div>
+                    </div>
+                </div>
+                <img id="faceimg" src="./img/main_sec6.png" alt="faceimg">
+            </div>
+        </div>
+    </main>
+    
+    <!-- 하단 -->
+    <footer>
+        <hr>
+        <a href="#"><img id="topbutton" src="./img/off.png" alt="topbutton"></a>
+        <div class="footer1">
+            <img src="./img/back_flogo.png" alt="footer logo" width="170px">
+        </div>
+        <select name="none" onchange="window.open(value, '_blank')">
+            <option selected disabled hidden>패밀리사이트 바로가기</option>
+            <option value="https://www.theborn.co.kr/">더본코리아</option>
+            <option value="https://newmaul.com/">새마을식당</option>
+            <option value="https://rolling-pasta.com/#kv">롤링파스타</option>
+            <option value="https://start.theborn.co.kr/">창업센터</option>
+        </select>
+        <div class="footer2">
+            <p><a href="개인정보"><b>개인정보처리방침</b></a></p>
+            <p>(주)더본코리아 | 사업자등록번호 211-86-00870 | 대표이사 백종원</p>
+            <p>주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 | 팩스: 02-511-3864</p>
+            <p>본사 대표전화: 02-549-3864 | 가맹상담전화: 02-3447-0410 | 고객센터: 1544-2360</p>
+            <p><br>COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+</body>
+</html>
