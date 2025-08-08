@@ -1,6 +1,6 @@
 /* section 메뉴 in 배너 */
 section{
-    position: relative;
+    position: relative; padding-top: 100px;
     display: flex; justify-content: center;
 }
 .sb_st_2{
