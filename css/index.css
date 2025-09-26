@@ -1,0 +1,292 @@
+/* ===== 폰트 ===== */
+@font-face {
+    font-family: 'KoreaInstituteOfMachineryAndMaterials';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'KoreaInstituteOfMachineryAndMaterials';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
+/* ===== 공통 ===== */
+html{height: 100%; min-width: 768px; font-family: 'SUITE', sans-serif;}
+body{height: 100%; margin: 0; overflow: hidden; position: relative;}
+body::selection{background-color: dimgray; color: #66cccc;}
+a{text-decoration: none; color: black;}
+h1{margin: 0; font-size: 6.0rem; font-family: 'KoreaInstituteOfMachineryAndMaterials';}
+h2{margin: 0; font-size: 3.0rem; font-weight: 900;}
+h3{margin: 0; font-size: 1.0rem;}
+
+@keyframes changeColor{
+    0% {background-color: #ffffff;}
+    12.5% {background-color: #66cccc;}
+    25% {background-color: #4d9999;}
+    37.5% {background-color: #336666;}
+    50% {background-color: black;}
+    62.5% {background-color: #336666;}
+    75% {background-color: #4d9999;}
+    87.5% {background-color: #66cccc;}
+    100% {background-color: #ffffff;}
+}
+
+@keyframes upDown{
+    0% {margin-bottom: 0;}
+    50% {margin-bottom: 10px;}
+    100% {margin-bottom: 0;}
+}
+
+
+/* ===== 헤더 ===== */
+header{
+    padding: 30px 40px;
+    position: fixed; top: 0; z-index: 999;
+}
+nav{
+    text-align: center;
+    ul{list-style: none; margin: 0; padding: 0;}
+    ul li{background-color: black; color: white; margin-bottom: 10px; padding: 0 4px 3px 4px;}
+    ul li:nth-child(1){color: #66cccc;}
+}
+
+
+/* ===== 메인 공통 ===== */
+main{height: 100%;}
+.sec-wrap{
+    position: relative; top: 0;
+    width: 100%; height: 100%;
+    transition: 1s;
+}
+.sec{
+    width: 100%; height: 100%;
+}
+.sec:nth-child(1){background-color: black; color: white;}
+.sec:nth-child(2){background-color: white;}
+.sec:nth-child(3){background-color: #66cccc;}
+.sec:nth-child(4){background-color: #4d9999;}
+.sec:nth-child(5){background-color: #336666;}
+
+
+/* ===== 메인 sec1 첫 화면 ===== */
+#sec1-box{
+    background-image: url(../img/back_space.jpg);
+    background-size: 100%;
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+}
+#sec1-circle{
+    border-radius: 350px;
+    width: 700px; height: 700px;
+    position: relative;
+    h1{
+        text-align: center; line-height: 680px;
+        position: relative; z-index: 1;
+        transition: all 3s ease;
+    }
+    img {
+        width: 100%;
+        position: absolute; top: 0; left: 0; z-index: 0;
+        opacity: 0;
+        transition: all 3s ease;
+    }
+}
+#sec1-circle:hover{
+    h1{color: black;}
+    img{opacity: 1;}
+}
+#sec1-bottom{
+    color: white;
+    width: 100%;
+    position: absolute; bottom: 5%; left: 40px;
+    p{background-color: black; width: 175px; text-align: center;}
+}
+
+.list{
+    position: absolute; top: 30px; left: 20px;
+    ul{list-style: none; margin: 0; padding: 0;}
+    li{margin-bottom: 10px; padding: 1.5px 0 1.5px 0;}
+}
+
+
+/* ===== 메인 sec2 자기소개 ===== */
+#sec2{
+    width: 100%;
+    position: relative;
+    .list{color: white;}
+    .list li:nth-child(2){color: black;}
+}
+#sec2-left{
+    background-color: black; border-radius: 50px;
+    width: 100px; height: 100px;
+    text-align: center;
+    animation: upDown 3s infinite;
+    transition: all 2s linear;
+    position: absolute; left: 40px; bottom: 270px;
+    display: flex; align-items: center; justify-content: center;
+    a{color: white; font-weight: bold;
+        transition: all 1s linear;}
+}
+#sec2-left:hover{
+    background-color: #66cccc;
+    a{color: black;}
+}
+#sec2-right{
+    /* border: 1px solid black; */
+    width: 78%; height: 63%; margin: 30px 40px;
+    float: right;
+    background-image: url(../img/grass-02.jpg);
+    background-size: 100%;
+}
+#sec2-bottom{
+    clear: both;
+    width: 100%; height: 200px;
+    position: absolute; bottom: 40px;
+    display: flex; justify-content: center;
+    > div{
+        /* background-color: #66cccc; */
+        /* border: 1px solid black; box-sizing: border-box; */
+        width: calc((100% - 80px) / 3);
+        h3{background-color: black; color: white; margin: 0; margin-bottom: 10px; padding: 3px 2%;}
+        p{margin: 3px 0; padding-left: 2%;}
+    }
+}
+
+
+/* ===== 메인 sec3 퍼스널브랜딩 ===== */
+#sec3{
+    position: relative;
+    .list{color: #66cccc;}
+    .list li:nth-child(3){color: black;}
+}
+#sec3-box{
+    width: 100%; height: 100%;
+    display: flex; justify-content: right;
+}
+#sec3-inbox{
+    border: 1px solid black;
+    width: 78%; margin: 30px 40px;
+    text-align: center;
+    display: flex; justify-content: space-between;
+}
+
+/* ===== 메인 sec4 개발 프로젝트 ===== */
+#sec4{
+    position: relative;
+    .list{color: #4d9999;}
+    .list li:nth-child(4){color: black;}
+}
+#sec4-box{
+    width: 100%; height: 100%;
+    display: flex; justify-content: right;
+}
+#sec4-inbox{
+    width: 78%; margin: 30px 40px;
+    text-align: center;
+    display: flex; justify-content: space-between;
+    .inbox:nth-child(2) .color-box{background-color: white;}
+}
+#sec4-inbox .inbox{
+    border: 2px solid black; box-sizing: border-box;
+    border-top: none; border-right: none;
+    width: 19%;
+    overflow: hidden;
+    position: relative;
+}
+#sec4-inbox .text-box{
+    width: 100%;
+    position: absolute; top: 120px;
+    display: flex; justify-content: center;
+}
+#sec4-inbox .btn-box{
+    width: 100%; height: 40px;
+    position: absolute; bottom: 40px; z-index: 1;
+    display: flex; justify-content: center; gap: 10px;
+    button{
+        background-color: transparent; border: 0;
+        width: 40%; height: 100%;
+    }
+    button a{
+        background-color: white; border: none; border-radius: 20px;
+        box-shadow: 2px 2px 10px 2px rgba(20, 20, 20, 0.2);
+        width: 40%; height: 100%; padding: 5px 20px 7px 20px;
+        font-size: 1.5rem;
+    }
+}
+#sec4-inbox .color-box{
+    background-color: black;
+    width: 100%; height: 100%;
+    position: absolute; top: 0; z-index: 0;
+    transform: translateX(-101%);
+    transition: all 0.5s ease;
+    img{width: 50px; margin-top: 20px;}
+}
+#sec4-inbox .inbox:hover .color-box{
+    transform: translateX(0);
+}
+#modal-1 .color li:nth-child(1){background-color: #212121; color: white;}
+#modal-1 .color li:nth-child(2){background-color: #33ff33;}
+#modal-1 .color li:nth-child(3){background-color: #fdffdd;}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; height: 100%;
+    position: fixed; top: 0; left: 0; z-index: 99;
+    display: none;
+}
+.modal-content{
+    width: 78%; height: 100%;
+    margin-top: 30px; margin-right: 40px;
+}
+.modal-in{
+    background-color: white; border: 1px solid black; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    width: 100%; height: calc(100% - 60px); text-align: center;
+    position: relative;
+    h2{margin: 0; padding: 10px 0;}
+    ul{
+        list-style: none; padding: 0;
+        display: flex;justify-content: center; gap: 10px;
+        li{
+            border: 1px solid black; border-radius: 10px;
+            height: 20px; padding: 0px 10px;
+        }
+    }
+    img{width: 70%;}
+    .color{font-weight: bold;}
+    span{
+        border: 1px solid black; border-radius: 25px;
+        width: 50px; height: 50px;
+        position: absolute; bottom: 30px; left: calc(50% - 15px);
+        display: flex; align-items: center; justify-content: center;
+        img{width: 45%;}
+    }
+}
+.open, .close{
+    cursor: pointer;
+}
+
+
+/* ===== 메인 sec5 디자인 프로젝트 ===== */
+#sec5{
+    position: relative;
+    .list{color: #336666;}
+    .list li:nth-child(5){color: black;}
+}
+#sec5-box{
+    width: 100%; height: 100%;
+    display: flex; justify-content: right;
+}
+#sec5-inbox{
+    width: 78%; margin: 30px 40px;
+    text-align: center;
+    display: flex; justify-content: space-between;
+    .inbox:nth-child(2) .color-box{background-color: white;}
+}
+#sec5-inbox .inbox{
+    border: 1px solid black; box-sizing: border-box; overflow: hidden;
+    width: 19.5%;
+    position: relative;
+}
